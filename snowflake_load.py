@@ -39,7 +39,7 @@ engine = create_engine(
     f"?warehouse={os.getenv('SNOWFLAKE_WAREHOUSE')}"
 )
 
-# Load DataFrame to Snowflake 
+# Load DataFrame to Snowflake  
 df.to_sql( 
     'retail_orders', 
     engine, if_exists = 
