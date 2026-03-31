@@ -43,8 +43,7 @@ df_monthly = pd.read_sql("""
 logger.info("Monthly Revenue:")
 print(df_monthly)
 
-# Query 3: Top 5 customers (stretch) 
-# 
+# Query 3: Top 5 customers (stretch)
 df_top = pd.read_sql(""" 
     SELECT customer_id, SUM(revenue) AS total_spent 
     FROM retail_orders 
